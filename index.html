@@ -1,0 +1,82 @@
+<doctype html5>
+<html>
+    <head>
+        <title>sholahuddin al habib</title>
+    </head>
+    <style>
+    p{
+        text-align: justify;
+        text-indent: 30px;
+    }
+    .ruang{ 
+    position: relative; 
+    display: flex; 
+    flex-direction:row; 
+    background-color: aqua; 
+    }
+    .jalan{ 
+       display: inline-block;
+            animation: berjalan 10s linear infinite;
+            position: relative;
+            white-space: nowrap;    
+            font-size: 15px;
+            color:black;`
+        }
+    @keyframes berjalan {
+      0% {left: 100vw; }
+    100% { left: -60px;}
+    }
+    </style>
+    <body>
+        <div class="ruang">
+            <div class="jalan" ><h1>welcom to my pages</h1></div>
+        </div>
+        <h2><b><u> Data Mahasiswa</u></b></h2><br>
+        <table border="1">
+            <tr>
+            <th>NO</th>
+            <th>NIM</th>
+            <th>NAMA</th>
+            <th>JURUSAN</th>
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>20250200013</td>
+            <td>sholahuddin al habib</td>
+            <td>Sistem Informasi</td>
+            </tr>
+        </table>
+        <h1>Perkenalan Mahasiswa</h1>
+        <p>Assalamualaikum warahmatullahi wabarakatuh</p>
+        <p> nama saya sholahuddin al habib, saya lahir di Tuban pada tanggal 10 Oktober 1996 , hobi saya adalah bermain game, membaca buku dan mendengarkan musik, saya sangat menyukai jurusan sistem informasi karena menurut saya jurusan ini sangat menarik dan menantang.</p>
+        <h2><b><u>Imput Data Mahasiswa</u></b></h2>
+            <form>
+                NIM : <input type="number" id="nim" name="nim" placeholder="Input NIM" required=""><br>
+                NAMA : <input type="text" id="nama" name="nama" placeholder="sholahuddin" required=""><br>
+                ALAMAT : <input type="text" id="alamat" name="alamat"  placeholder="Jl.Banyu" required=""><br>
+                UMUR : <input type="number" id="angka" name="angka" min="17" max="100" required><br>
+                EMAIL : <input type="text" id="email" name="email"  placeholder="sholahuddin@siber.ac.id" required=""><br>
+                tanggal lahir : <input type="date" name="tgl_lahir"><br>
+                Hobi:<br>
+                <input type="checkbox" name="hobi" value="membaca">Membaca<br>
+                <input type="checkbox" name="hobi" value="bermain game">Bermain Game<br>
+                <input type="checkbox" name="hobi" value="bermain bola">Bermain Bola<br>
+                Jenis kelamin:<br>
+                <input type="radio" name="jk" value="laki-laki">Laki-laki<br>
+                <input type="radio" name="jk" value="perempuan">Perempuan<br>
+                Jurusan:
+                <select name="jurusan">
+                <option value="sistem informasi">Sistem Informasi</option>
+                <option value="teknik informatika">Teknik Informatika</option>
+                <option value="teknik komputer">Administrasi Kesehatan</option>
+                <option value="teknik elektro">Akuntansi</option>
+                <option value="teknik mesin">Manajemen</option>
+                <option value="manajemen dan hukum">manajemen dan hukum</option>
+                </select><br>
+                Pesan : <br>
+                <textarea id="pesan" name="pesan" required=""></textarea><br>
+                <input type="submit" value="KIRIM">
+                <input type="reset" value="RESET">
+            </form>
+    </body>
+</html>
